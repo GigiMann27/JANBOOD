@@ -28,16 +28,19 @@ public class LeaveListSteps extends BaseClass {
 	public void i_enter_and(String fDate, String tDate, String empName) throws Throwable {
 		Thread.sleep(4000);
 
-		leavePage.toDate.click();
+		// leavePage.toDate.click();
 		CommonMethods.enterValue(leavePage.fromDate, fDate);
-		Thread.sleep(3000);
-		leavePage.toDate.click();
-		Thread.sleep(3000);
 
-		leavePage.toDate.click();
-		Thread.sleep(3000);
+		// Thread.sleep(3000);
+		// leavePage.toDate.click();
+		// Thread.sleep(3000);
+		//
+		// leavePage.toDate.click();
+		// Thread.sleep(3000);
+
 		CommonMethods.enterValue(leavePage.toDate, tDate);
-		leavePage.toDate.click();
+		Thread.sleep(3000);
+		leavePage.totablelink.click();
 
 		CommonMethods.enterValue(leavePage.EmpName, empName);
 		leavePage.EmpName.sendKeys(Keys.ENTER);

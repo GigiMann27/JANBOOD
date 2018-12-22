@@ -9,34 +9,37 @@ import com.syntax.utils.BaseClass;
 public class LeaveListPage extends BaseClass {
 
 	@FindBy(xpath = "//b[contains(text(),'Leave')]")
-	public static WebElement clickLeave;
+	public WebElement clickLeave;
 
 	@FindBy(xpath = "//a[@id='menu_leave_viewLeaveList']")
-	public static WebElement clickLeveList;
+	public WebElement clickLeveList;
 
-	@FindBy(xpath = "")
-	public static WebElement fromDate;
+	@FindBy(xpath = "//input[@id='calFromDate']")
+	public WebElement fromDate;
 
-	@FindBy(xpath = "")
-	public static WebElement toDate;
+	@FindBy(xpath = "//input[@id='calToDate']")
+	public WebElement toDate;
 
 	@FindBy(xpath = "//input[@id='leaveList_chkSearchFilter_checkboxgroup_allcheck']")
-	public static WebElement checkAll;
+	public WebElement checkAll;
 
 	@FindBy(xpath = "//input[@id='leaveList_txtEmployee_empName']")
-	public static WebElement EmpName;
+	public WebElement EmpName;
 
 	@FindBy(xpath = "//select[@id='leaveList_cmbSubunit']")
-	public static WebElement subUnit;
+	public WebElement subUnit;
 
 	@FindBy(xpath = "//input[@id='btnSearch']")
-	public static WebElement clickSearch;
+	public WebElement clickSearch;
 
 	@FindBy(xpath = "//input[@id='btnSave']")
-	public static WebElement save;
+	public WebElement save;
 
 	@FindBy(xpath = "//table[@class='table hover']/tbody")
-	public static WebElement table;
+	public WebElement table;
+
+	@FindBy(xpath = "//ol//li[2]//img[1]")
+	public WebElement totablelink;
 
 	public LeaveListPage() {
 		PageFactory.initElements(driver, this);
