@@ -1,6 +1,8 @@
 package com.syntax.stepDefinitions;
 
 import org.junit.Assert;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 
 import com.syntax.pages.LeaveEntitlementPage;
 import com.syntax.utils.BaseClass;
