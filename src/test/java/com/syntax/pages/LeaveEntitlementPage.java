@@ -44,6 +44,15 @@ public class LeaveEntitlementPage extends BaseClass {
 	@FindBy(xpath = "//li[@class='ac_even']//strong[contains (text(), 'Steven Edwards')]")
 	public WebElement dropdown;
 
+	@FindBy(id="txtUsername")
+	public WebElement username;
+	
+	@FindBy(id="txtPassword")
+	public WebElement password;
+	
+	@FindBy(id="btnLogin")
+	public WebElement btnLogin;
+
 	public LeaveEntitlementPage() {
 		PageFactory.initElements(driver, this);
 	}

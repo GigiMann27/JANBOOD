@@ -2,7 +2,7 @@
 Feature: Login feature
 
   Background: 
-    Given OrangeHRM logo is displayed
+    Given I am already logged in
 
   Scenario: Valid login
     When I enter "admin" and "admin123"
